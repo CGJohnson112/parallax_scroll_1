@@ -1,19 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body, html {
     height: 100%;
+    background-color: black;
+   
+
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+footer {
+    padding: 25px;
+    color: white;
+    background-color: gray;
+    text-align: center;
+
+}
+
+.header {
+    font-size: 160px;
+     font-family: 'Bangers', cursive;
 }
 
 .parallax { 
     /* The image used */
-    background-image: url("images/shift.jpg");
+    background-image: url("images/turntable.gif");
 
     /* Full height */
-    height: 100%; 
+    height: 1000px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding:0;
+
+
 }
 
 .parallax2 {
@@ -32,4 +61,50 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.parallax, .parallax2, .parallax3 {
+    
+
+
+}
+
+.text {
+    color: white;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    padding: 0;
+    margin:0;
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    .parallax, .parallax2, .parallax3 {
+        width:100%;
+       
+    }
+
+    .header {
+        font-size: 80px;
+        font-family: 'Bangers', cursive;
+    }
+
+    .img {
+        width: 100%;
+
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .logo {
+        width: 200px;
+    }
+    
 }
